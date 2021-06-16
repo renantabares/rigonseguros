@@ -1,0 +1,38 @@
+#auto {
+     /* The image used */
+     background-image: url("../img/background_auto.jpg");
+     height: 400px;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     opacity: 80%;
+}
+
+#residencia {
+    background-image: url("../img/background_residencia.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+}
+
+#vida {
+    background-image: url("../img/background_vida.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+}
+.title{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px black;
+    background: black;
+    color: white;
+    opacity: 90%;
+}

@@ -1,0 +1,64 @@
+.App {
+    /* margin: 10px; */
+    border-radius: 10px;
+    border-style: outset;
+    background: rgb(48, 26, 13);
+    background: radial-gradient(circle, rgba(48, 26, 13, 1) 0%, rgba(177, 127, 62, 0.6923144257703081) 100%);
+    text-align: center;
+}
+
+.App p {
+    color: white;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+
+#quemSomos {
+    /* The image used */
+    background-image: url("../img/background_index.jpg");
+    /* Set a specific height */
+    height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+}
+
+#textQuemSomos {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+    background: black;
+    color: white;
+    opacity: 90%;
+
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
