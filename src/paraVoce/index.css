@@ -1,32 +1,23 @@
-#auto {
-     /* The image used */
-     background-image: url("../img/background_auto.jpg");
+#auto,#residencia,#vida{
      height: 400px;
      background-attachment: fixed;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     opacity: 80%;
+     opacity: .5;
+}
+
+#auto {
+     /* The image used */
+     background-image: url("../img/background_auto.jpg");     
 }
 
 #residencia {
-    background-image: url("../img/background_residencia.jpg");
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 80%;
+    background-image: url("../img/background_residencia.jpg");   
 }
 
 #vida {
-    background-image: url("../img/background_vida.jpg");
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 80%;
+    background-image: url("../img/background_vida.jpg");    
 }
 .title{
     border: 1px solid;
@@ -34,5 +25,5 @@
     box-shadow: 5px 10px black;
     background: black;
     color: white;
-    opacity: 90%;
+    opacity: .8;
 }
