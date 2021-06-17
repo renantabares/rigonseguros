@@ -32,7 +32,7 @@ export default props => {
                     <Container>
                         <Row>
                             <Col>
-                                <Accordion >
+                                <Accordion defaultActiveKey="0">
                                     <Card>
                                         <Accordion.Toggle as={Card.Header} eventKey="0">
                                             <b>Serviços</b>
@@ -98,7 +98,7 @@ export default props => {
                     <Container>
                         <Row>
                             <Col>
-                                <Accordion >
+                                <Accordion defaultActiveKey="0">
                                     <Card>
                                         <Accordion.Toggle as={Card.Header} eventKey="0">
                                             <b>Serviços Básicos</b>
@@ -201,7 +201,7 @@ export default props => {
                                 <a href='/cotacao-auto' className="btn btn-outline-primary">Solicite cotação</a>
                             </Col>
                             <Col>
-                                <Accordion >
+                                <Accordion defaultActiveKey="0">
                                     <Card>
                                         <Accordion.Toggle as={Card.Header} eventKey="0">
                                             <b>Coberura Básica</b>
