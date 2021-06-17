@@ -1,13 +1,16 @@
 body {
     /* background-color: #222; */
-    font-size: 2rem;
-    font-family: Oswald;
+    /* font-size: 2rem; */
+    font-family: Oswald!important;
     color: #FFF;
-    margin: 30px;
-   
+    margin: 30px;   
 }
 
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.text-lg-start{
+    color: #FFF!important;
 }

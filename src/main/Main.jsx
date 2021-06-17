@@ -30,7 +30,7 @@ function Main() {
                     A mais de duas décadas construindo confiança
                 </Button>
             </header>
-            {/* <Fipe></Fipe> */}
+
             <Jumbotron fluid id="quemSomos">
                 <div id="textQuemSomos">
                     <h2 className="text-center">
