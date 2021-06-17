@@ -8,7 +8,8 @@ import Sinistro from '../sinistro'
 import Index from './Main'
 import CotacaoAuto from '../paraVoce/cotacaoAuto'
 
-export default (props) => (
+export default function(props){ 
+    return(
     <Router history={hashHistory}>
         <Route path="/paravoce" component={ParaVoce} />
         <Route path="/cotacao-auto" component={CotacaoAuto} />
@@ -19,3 +20,4 @@ export default (props) => (
         <Redirect from="*" to="/" />
     </Router>
 )
+}

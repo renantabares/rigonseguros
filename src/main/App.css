@@ -4,6 +4,7 @@
     border-style: outset;
     background: rgb(48, 26, 13);
     background: radial-gradient(circle, rgba(48, 26, 13, 1) 0%, rgba(177, 127, 62, 0.6923144257703081) 100%);
+    /* background: rgba(177, 127, 62, 0.7); */
     text-align: center;
 }
 
@@ -16,7 +17,9 @@
     pointer-events: none;
 }
 
-
+.App .card{
+    color: black!important;
+}
 #quemSomos {
     /* The image used */
     background-image: url("../img/background_index.jpg");
@@ -27,7 +30,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 50%;
+    opacity: .5;
 }
 
 #textQuemSomos {
@@ -35,9 +38,7 @@
     padding: 10px;
     box-shadow: 5px 10px #888888;
     background: black;
-    color: white;
-    opacity: 90%;
-
+    color: white!important;   
 }
 
 .App-header {
