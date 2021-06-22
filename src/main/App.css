@@ -1,10 +1,8 @@
-.App {
-    /* margin: 10px; */
+/* .App {
     border-radius: 10px;
     border-style: outset;
     background: rgb(48, 26, 13);
-    background: radial-gradient(circle, rgba(48, 26, 13, 1) 0%, rgba(177, 127, 62, 0.6923144257703081) 100%);
-    /* background: rgba(177, 127, 62, 0.7); */
+    background: radial-gradient(circle, rgba(48, 26, 13, 1) 0%, rgba(177, 127, 62, 0.6923144257703081) 100%);    
     text-align: center;
 }
 
@@ -20,18 +18,14 @@
 .App .card{
     color: black!important;
 }
-#quemSomos {
-    /* The image used */
-    background-image: url("../img/background_index.jpg");
-    /* Set a specific height */
-    height: 500px;
-    /* Create the parallax scrolling effect */
+#quemSomos {    
+    background-image: url("../img/background_index.jpg");    
+    height: 500px;    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: .5;
-}
+    opacity: .5;}
 
 #textQuemSomos {
     border: 1px solid;
@@ -54,12 +48,9 @@
 .App-link {
     color: #61dafb;
 }
+ */
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+
+
+/* margin: 10px; */
+/* background: rgba(177, 127, 62, 0.7); */
