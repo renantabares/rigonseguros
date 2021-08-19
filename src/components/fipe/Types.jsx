@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useEffect }  from 'react'
 import Form from 'react-bootstrap/Form'
 
 export default props => {
-
+    useEffect(() => {
+        
+    })
     const renderOptions = () => {
         const list = props.types || []
         return list.map(type => (
@@ -13,7 +15,6 @@ export default props => {
     return (
         <>
             <Form.Control onChange={e => props.getBrands(e.target.value)} as="select">
-                <option selected >Selecione o tipo de veiculo</option>
                 {renderOptions()}
             </Form.Control>
         </>

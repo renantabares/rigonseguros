@@ -7,6 +7,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Accordion from 'react-bootstrap/Accordion'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import './index.css'
 
 import Fipe from '../components/fipe/Fipe'
@@ -32,10 +33,10 @@ export default props => {
                     <Container>
                         <Row>
                             <Col>
-                                <Accordion defaultActiveKey="0">
+                                <Accordion defaultActiveKey="2">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="0">
-                                            <b>Serviços</b>
+                                        <Accordion.Toggle as={Button} eventKey="0">
+                                           <b>Serviços</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
                                             <Card.Body>
@@ -50,7 +51,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="1">
+                                        <Accordion.Toggle as={Button} eventKey="1">
                                             <b>Coberturas</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
@@ -69,7 +70,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="2">
+                                        <Accordion.Toggle as={Button} eventKey="2">
                                             <b>Alta disponibilidade</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="2">
@@ -98,9 +99,9 @@ export default props => {
                     <Container>
                         <Row>
                             <Col>
-                                <Accordion defaultActiveKey="0">
+                                <Accordion defaultActiveKey="1">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="0">
+                                        <Accordion.Toggle as={Button} eventKey="0">
                                             <b>Serviços Básicos</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
@@ -123,7 +124,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="1">
+                                        <Accordion.Toggle as={Button} eventKey="1">
                                             <b>Serviços Especiais</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
@@ -143,7 +144,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="2">
+                                        <Accordion.Toggle as={Button} eventKey="2">
                                             <b>Coberturas básicas</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="2">
@@ -158,7 +159,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="3">
+                                        <Accordion.Toggle as={Button} eventKey="3">
                                             <b>Coberturas Opcionais</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="3">
@@ -201,10 +202,10 @@ export default props => {
                                 <a href='/cotacao-auto' className="btn btn-outline-primary">Solicite cotação</a>
                             </Col>
                             <Col>
-                                <Accordion defaultActiveKey="0">
+                                <Accordion defaultActiveKey="2">
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="0">
-                                            <b>Coberura Básica</b>
+                                        <Accordion.Toggle as={Button} eventKey="0">
+                                            <b>Cobertura Básica</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
                                             <Card.Body>
@@ -215,7 +216,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="1">
+                                        <Accordion.Toggle as={Button} eventKey="1">
                                             <b>Coberturas Complementares</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
@@ -232,7 +233,7 @@ export default props => {
                                         </Accordion.Collapse>
                                     </Card>
                                     <Card>
-                                        <Accordion.Toggle as={Card.Header} eventKey="2">
+                                        <Accordion.Toggle as={Button} eventKey="2">
                                             <b>Assistências</b>
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="2">

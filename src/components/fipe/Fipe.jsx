@@ -8,10 +8,11 @@ import Models from './Models'
 import YearVehicle from './YearVehicle'
 
 function Fipe() {
-    const [types, seTypes] = useState([
-        {value: 'auto', name: 'Automóvel'},
-        {value: 'moto', name: 'Motocicleta'},
-        {value: 'caminhao', name: 'Caminhão'}
+    const [types, setTypes] = useState([
+        {value: 0, name: 'selecione'},
+        {value: 'autos', name: 'Automóvel'},
+        {value: 'motos', name: 'Motocicleta'},
+        {value: 'caminhoes', name: 'Caminhão'}
     ])
     const [tipo, setTipo] = useState('')
     const [marcas, setMarca] = useState([])
@@ -30,6 +31,19 @@ function Fipe() {
         setYearVehicle([])
         setVeiculo({})
     }
+    const clearState = () => {
+        setTipo('')
+        setTypes([
+            {value: 0, name: 'selecione'},
+            {value: 'autos', name: 'Automóvel'},
+            {value: 'motos', name: 'Motocicleta'},
+            {value: 'caminhoes', name: 'Caminhão'}
+        ])
+        setMarca([])
+        setModelos([])
+        setYearVehicle([])
+        setVeiculo({})
+    }
 
 
     async function getBrands(type) {
@@ -42,7 +56,7 @@ function Fipe() {
         setCodMarca(codigo)
         //GET: https://parallelum.com.br/fipe/api/v1/carros/marcas/59/modelos
         const result = await axios.get(URL + tipo + '/marcas/' + codigo + '/modelos')
-        setModelos(result.data.modelos)
+        setModelos([...result.data.modelos])
     }
     async function getYearVehicle(codigo) {
         setCodModel(codigo)
@@ -81,7 +95,7 @@ function Fipe() {
                     <Models models={modelos} getYearVehicle={getYearVehicle} />
                     <YearVehicle years={yearVehicle} getVehicle={getVehicle} />
                     <br />
-                    <button onClick={() => resetState()} className="btn btn-primary">Recomeçar</button>
+                    <button onClick={() => clearState()} className="btn btn-primary">Recomeçar</button>
                 </Card.Body>
 
                 <Card.Body style={{ backgroundColor: 'black', color: 'white' }}>
